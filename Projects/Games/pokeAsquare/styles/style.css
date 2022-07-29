@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+header {
+  background-color: pink;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+button {
+  float: right;
+  margin-right: 50%;
+}
+
+.squaresContainer {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* 12% of 100 of height */
+.square {
+  width: 12vh;
+  height: 12vh;
+  padding: 0;
+  margin: 5px;
+}
+
+.square.green {
+  background-color: green;
+}
+
+.square.red {
+  background-color: red;
+}
+
+.square.blue {
+  background-color: blue;
+}
+/* this class comes last because it is positioned last */
+.square.hidden {
+  opacity: 0;
+}
